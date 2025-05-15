@@ -21,7 +21,6 @@ vim.opt.inccommand = "split"
 vim.opt.ignorecase = true
 vim.opt.smarttab = true
 vim.opt.breakindent = true
-vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.wrap = false
 vim.opt.backspace = { "start", "eol", "indent" }
