@@ -11,8 +11,13 @@ return {
         adapters = {
           gemini = function()
             return require("codecompanion.adapters").extend("gemini", {
+              schema = {
+                model = {
+                  default = "gemini-2.0-flash",
+                },
+              },
               env = {
-                api_key = "",
+                api_key = "cmd:gpg --decrypt E:gemini-api-key.txt.gpg",
               },
             })
           end,
