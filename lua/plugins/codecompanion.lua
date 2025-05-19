@@ -17,7 +17,7 @@ return {
                 },
               },
               env = {
-                api_key = "cmd:gpg --decrypt E:gemini-api-key.txt.gpg",
+                api_key = 'cmd:gpg --batch --quiet --decrypt "E:\\gemini-api-key.txt.gpg" 2>NUL',
               },
             })
           end,
